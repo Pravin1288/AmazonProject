@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
@@ -18,7 +19,7 @@ public class SetUp {
 	Properties prop = new Properties();
 	
 	@BeforeClass
-	public void Initialization() throws IOException {
+	public void Initialization() throws IOException, InterruptedException {
 		
 		//To Read the File using File Input Stream
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\Properties\\config.properties");
@@ -34,6 +35,10 @@ public class SetUp {
 		
 		//Maximize the Window
 		driver.manage().window().maximize();
+		
+		//Allow Cookies
+		driver.findElement(By.xpath("//button[contains(text(),'Allow all cookies')]")).click();
+		Thread.sleep(3000);
 		
 		//Get the Title
 		System.out.println(driver.getTitle());		
