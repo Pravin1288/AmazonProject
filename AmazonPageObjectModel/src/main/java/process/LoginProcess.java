@@ -21,5 +21,11 @@ public class LoginProcess extends Helper {
 		lp.Password().sendKeys("123456");
 		lp.SignIn().click();
 }
+	
+	public void LoginWithInValidCredential() {
+		lp.UserName().sendKeys("abcd@gmail.com");
+		lp.Password().sendKeys("12345666666");
+		lp.SignIn().click();
+}
 }
 

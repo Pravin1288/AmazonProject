@@ -7,6 +7,14 @@ import utility.Helper;
 
 public class LoginPage extends Helper{
 	
+	//Declaring the PageObject properly this time
+	//Hence Rewriting it
+	//If therer is id and xpath changes, we can write it here
+	public static final String EmailBox = "email";
+	public static final String PasswordBox = "password";
+	public static final String SignInBox = "//button[@type='submit']";
+	
+	
 	//Declaring Webelements
 	WebElement elements;
 
@@ -16,17 +24,17 @@ public class LoginPage extends Helper{
 	}
 	
 	public WebElement UserName() {
-		elements = getElementName("username");
+		elements = getElementName(EmailBox);
 		return elements;
 	}
 	
 	public WebElement Password() {
-		elements = getElementName("password");
+		elements = getElementName(PasswordBox);
 		return elements;
 	}
 	
 	public WebElement SignIn() {
-		elements = getElementXPath("//button[@type='submit']");
+		elements = getElementXPath(SignInBox);
 		return elements;
 	}
 
