@@ -1,8 +1,14 @@
 package utility;
 
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.NoSuchElementException;
 
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -61,6 +67,21 @@ public class Helper {
 	public static WebElement getElementClassName(String locator) { //capturing the element
 		return wait.until(ExpectedConditions.visibilityOfElementLocated(By.className(locator)));  //Instead of driver.find element using expectedconditions
 		
+	}
+	
+	//Copy/Write the EXCEL_READER_FUNCTION
+	public XSSFCell ReadingDataFromExcel (String sheetname, int row, int column) throws IOException {
+		//Creating the Excel Reader Function
+		//Creating File
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\Data\\CredentialSheet.xlsx");
+		XSSFWorkbook wb = new XSSFWorkbook(fis);
+		XSSFSheet sheet = wb.getSheet(sheetname);
+		//Fetching ROW
+		XSSFRow r = sheet.getRow(row);
+		//Fetching Column
+		XSSFCell c = r.getCell(column);
+		//Return the Value of c
+		return c;	
 	}
 	
 }

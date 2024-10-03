@@ -1,5 +1,8 @@
 package process;
 
+import java.io.IOException;
+
+import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.openqa.selenium.WebDriver;
 
 import pageobject.LoginPage;
@@ -16,9 +19,13 @@ public class LoginProcess extends Helper {
 	}
 	
 	//we will create another method here for valid credentials
-	public void LoginWithValidCredential() {
-		lp.UserName().sendKeys("abc@gmail.com");
-		lp.Password().sendKeys("123456");
+	public void LoginWithValidCredential() throws IOException {
+		XSSFCell UserNameFromExcel = ReadingDataFromExcel ("Sheet1", 1, 0);
+		XSSFCell PasswordFromExcel = ReadingDataFromExcel ("Sheet1", 1, 1);
+		
+		
+		lp.UserName().sendKeys(UserNameFromExcel.toString());
+		lp.Password().sendKeys(PasswordFromExcel.toString());
 		lp.SignIn().click();
 }
 	

@@ -1,5 +1,7 @@
 package Regression;
 
+import java.io.IOException;
+
 import org.testng.annotations.Test;
 
 import process.LoginProcess;
@@ -10,7 +12,7 @@ public class LoginTest extends SetUp{
 	LoginProcess lpr;
 	
 	@Test
-	public void ValidateWithCorrectUserName_PW() {
+	public void ValidateWithCorrectUserName_PW() throws IOException {
 		
 		lpr = new LoginProcess(driver);
 		lpr.LoginWithValidCredential();
