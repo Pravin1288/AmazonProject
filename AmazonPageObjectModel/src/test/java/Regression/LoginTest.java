@@ -16,7 +16,7 @@ public class LoginTest extends SetUp{
 		
 		lpr = new LoginProcess(driver);
 		lpr.LoginWithValidCredential();
-		System.out.println("Validated Successfully");
+		//System.out.println("Validated Successfully");
 	}
 
 	/*
