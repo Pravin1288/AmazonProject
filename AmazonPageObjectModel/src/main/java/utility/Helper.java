@@ -69,8 +69,10 @@ public class Helper {
 		
 	}
 	
+	
+	
 	//Copy/Write the EXCEL_READER_FUNCTION
-	public XSSFCell ReadingDataFromExcel (String sheetname, int row, int column) throws IOException {
+	public static String ReadingDataFromExcel (String sheetname, int row, int column) throws IOException {
 		//Creating the Excel Reader Function
 		//Creating File
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\Data\\CredentialSheet.xlsx");
@@ -81,7 +83,7 @@ public class Helper {
 		//Fetching Column
 		XSSFCell c = r.getCell(column);
 		//Return the Value of c
-		return c;	
+		return c.toString();	
 	}
 	
 }

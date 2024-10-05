@@ -12,8 +12,7 @@ public class LoginPage extends Helper{
 	//If therer is id and xpath changes, we can write it here
 	public static final String EmailBox = "username";
 	public static final String PasswordBox = "password";
-	public static final String SignInBox = "//button[@type='submit']";
-	
+	public static final String SignInBox = "//button[@type='submit']";	
 	
 	//Declaring Webelements
 	WebElement elements;

@@ -41,7 +41,7 @@ public class SetUp {
 		Thread.sleep(3000);
 		
 		//Get the Title
-		System.out.println(driver.getTitle());		
+		System.out.println(driver.getTitle());	
 	}
 	
 	@AfterClass

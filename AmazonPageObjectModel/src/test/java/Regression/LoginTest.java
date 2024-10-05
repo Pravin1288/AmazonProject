@@ -19,4 +19,10 @@ public class LoginTest extends SetUp{
 		System.out.println("Validated Successfully");
 	}
 
+	/*
+	 * @Test public void ValidWithIncorrectUserName_PW() throws IOException {
+	 * lpr = new LoginProcess(driver);
+	 * lpr.LoginWithInValidCredential();
+	 * System.out.println("invalidated Successfully"); }
+	 */
 }
