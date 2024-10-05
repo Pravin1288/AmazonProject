@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-05T21:52:27 BST" name="Suite" finished-at="2024-10-05T21:52:48 BST" duration-ms="20579">
+  <suite started-at="2024-10-05T22:55:48 BST" name="Suite" finished-at="2024-10-05T22:56:08 BST" duration-ms="19539">
     <groups>
     </groups>
-    <test started-at="2024-10-05T21:52:27 BST" name="Test" finished-at="2024-10-05T21:52:48 BST" duration-ms="20579">
+    <test started-at="2024-10-05T22:55:48 BST" name="Test" finished-at="2024-10-05T22:56:08 BST" duration-ms="19539">
       <class name="Regression.LoginTest">
-        <test-method is-config="true" signature="Initialization()[pri:0, instance:Regression.LoginTest@7a35b0f5]" started-at="2024-10-05T21:52:27 BST" name="Initialization" finished-at="2024-10-05T21:52:38 BST" duration-ms="10805" status="PASS">
+        <test-method is-config="true" signature="Initialization()[pri:0, instance:Regression.LoginTest@5386659f]" started-at="2024-10-05T22:55:48 BST" name="Initialization" finished-at="2024-10-05T22:55:59 BST" duration-ms="10313" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Initialization -->
-        <test-method signature="ValidateWithCorrectUserName_PW()[pri:0, instance:Regression.LoginTest@7a35b0f5]" started-at="2024-10-05T21:52:38 BST" name="ValidateWithCorrectUserName_PW" finished-at="2024-10-05T21:52:46 BST" duration-ms="7593" status="PASS">
+        <test-method signature="ValidateWithCorrectUserName_PW()[pri:0, instance:Regression.LoginTest@5386659f]" started-at="2024-10-05T22:55:59 BST" name="ValidateWithCorrectUserName_PW" finished-at="2024-10-05T22:56:06 BST" duration-ms="7128" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateWithCorrectUserName_PW -->
-        <test-method is-config="true" signature="CleanUp()[pri:0, instance:Regression.LoginTest@7a35b0f5]" started-at="2024-10-05T21:52:46 BST" name="CleanUp" finished-at="2024-10-05T21:52:48 BST" duration-ms="2046" status="PASS">
+        <test-method is-config="true" signature="CleanUp()[pri:0, instance:Regression.LoginTest@5386659f]" started-at="2024-10-05T22:56:06 BST" name="CleanUp" finished-at="2024-10-05T22:56:08 BST" duration-ms="2005" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CleanUp -->
